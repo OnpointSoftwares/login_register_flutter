@@ -48,12 +48,14 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-           const Image(image: AssetImage('assets/images/logo.png')),
-           const Text('Login',style:TextStyle(color:Colors.white)),
+           Image.asset('assets/images/money.png'),
+           const Text('Translation',style:TextStyle(color:Colors.white)),
            const SizedBox(height:20),
            Container(
+            width: 500,
             decoration: BoxDecoration(
-              color: Colors.white,
+              
+              color: const Color.fromARGB(255, 179, 182, 199),
               borderRadius: BorderRadius.all(Radius.circular(5)),
             ),
             child: Column(children:<Widget>[
