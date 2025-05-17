@@ -31,13 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-           Image.asset('assets/images/money.png'),
+           Image(image:AssetImage('assets/images/money.png')),
            const Text('Translation',style:TextStyle(color:Colors.white)),
            const SizedBox(height:20),
            Container(
